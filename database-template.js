@@ -1,5 +1,12 @@
 const fs = require('fs');
 
+function setup(name) {
+  if (!name.endsWith(".json")) throw new Error("FILE MUST HAVE JSON AS FORMAT");
+  fs.appendFileSync(name, JSON.stringify([]), function (err) {
+    throw err;
+  })
+}
+
 function has(file, name) {
   return eval(fs.readFileSync(file, 'utf8')).includes(name)
 }
@@ -40,4 +47,4 @@ function clear(file) {
   fs.writeFileSync(file, JSON.stringify([]), 'utf8')
 }
 
-module.exports = { add, remove, get, set, has, all, clear }
+module.exports = { setup, add, remove, get, set, has, all, clear }
