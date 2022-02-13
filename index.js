@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-function newElement(name) {
+function addElement(name) {
   let data = fs.readFileSync('./database.json', 'utf8');
   data = eval(data)
   data.push(name)
