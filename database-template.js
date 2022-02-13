@@ -33,4 +33,4 @@ function clear(file) {
   fs.writeFileSync(file, JSON.stringify([]), 'utf8')
 }
 
-module.exports = { add, remove, get, has, all }
+module.exports = { add, remove, get, has, all, clear }
