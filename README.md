@@ -35,10 +35,10 @@ database.get('./database.json', 'how are you')
 
 ### Has database an element
 ```
-database.has('./database.json', 'i am fine')
+database.has('./database.json', 'i am fine') // replies with true or false
 ```
 
 ### Get a whole database
 ```
-database.getDatabase('./database.json', i am fine')
+database.getDatabase('./database.json', i am fine') // replies with an array
 ```
