@@ -86,3 +86,4 @@ if (database.has(settings.file, "World") {
 database.set(settings.file, "World", "You there")
 
 console.log(database.all(settings.file))
+```
