@@ -14,22 +14,22 @@ Now you're ready to use this database framwork!
 
 ## Introduction
 ### Require the framework
-```
+```js
 const database = require('./database-template.json')
 ```
 
 ### Add an element to a database
-```
+```js
 database.add('./database.json', 'hello')
 ```
 
 ### Remove an element from a database
-```
+```js
 database.remove('./database.json', 'world')
 ```
 
 ### Get an element from a database
-```
+```js
 database.get('./database.json', 'how are you')
 ```
 
