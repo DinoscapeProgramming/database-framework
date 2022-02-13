@@ -33,6 +33,15 @@ database.remove('./database.json', 'world')
 database.get('./database.json', 'how are you')
 ```
 
+### Change an element from a database
+```js
+database.set('./database.json', 'world', 'guys')
+```
+
+### Change an element from a database by id
+```js
+database.set('./database.json', database.get('./database.json', 2), 'guys')
+
 ### Has database an element
 ```js
 database.has('./database.json', 'i am fine') // replies with true or false
