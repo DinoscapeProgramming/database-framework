@@ -22,3 +22,23 @@ const database = require('./database-template.json')
 ```
 database.add('./database.json', 'hello')
 ```
+
+### Remove an element from a database
+```
+database.remove('./database.json', 'world')
+```
+
+### Get an element from a database
+```
+database.get('./database.json', 'how are you')
+```
+
+### Has database an element
+```
+database.has('./database.json', 'i am fine')
+```
+
+### Get a whole database
+```
+database.getDatabase('./database.json', i am fine')
+```
