@@ -49,3 +49,14 @@ const database = require('./database-template.js');
 const settings = {
   file: './database.json'
 }
+
+database.add(settings.file, "Hello")
+database.add(settings.file, "World")
+database.add(settings.file, "!")
+database.remove(settings.file, "World")
+if (database.has(settings.file, "World") {
+  console.log("How are you?")
+} else {
+  console.log("How are you all on the world?")
+}
+console.log(database.all(settings.file))
