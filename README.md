@@ -70,6 +70,8 @@ const settings = {
   file: './database.json'
 }
 
+database.setup(settings.file.substring(1, settings.file.length))
+
 database.clear(settings.file)
 
 database.add(settings.file, "Hello")
