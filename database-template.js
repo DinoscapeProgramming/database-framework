@@ -18,8 +18,12 @@ function getElement(file, id) {
   return eval(fs.readFileSync(file, 'utf8'))[id]
 }
 
-function getArray(file) {
+function getDatabase(file) {
   return eval(fs.readFileSync(file, 'utf8'))
 }
 
-module.exports = { addElement, removeElement, getElement, getArray }
+function hasElement(file, name) {
+  return eval(fs.readFileSync(file, 'utf8')).includes(name)
+}
+
+module.exports = { addElement, removeElement, getElement, getDatabase, hasElement }
