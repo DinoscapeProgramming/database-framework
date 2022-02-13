@@ -40,7 +40,8 @@ database.set('./database.json', 'world', 'guys')
 
 ### Change an element from a database by id
 ```js
-database.set('./database.json', database.get('./database.json', 2), 'guys')
+database.set('./database.json', database.get('./database.json', 2), 'github')
+```
 
 ### Has database an element
 ```js
