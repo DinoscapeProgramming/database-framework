@@ -12,6 +12,9 @@ database.add(settings.file, "Hello")
 database.remove(settings.file, "World")
 // removes an element called "World"
 
+database.set(settings.file, "World", "you there")
+// sets "World" to "you there"
+
 console.log(database.has(settings.file, "Hello"))
 // logs is database has "Hello"
 
