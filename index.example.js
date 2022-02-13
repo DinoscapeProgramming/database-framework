@@ -3,11 +3,17 @@ const settings = {
   file: './database.json.example'
 }
 
+database.setup(settings.file.substring(1, settings.file.length))
+// creates a new file called "database.json.example"
+
 database.add(settings.file, "Hello")
 // adds an element called "Hello"
 
 database.remove(settings.file, "World")
 // removes an element called "World"
+
+console.log(database.has(settings.file, "Hello"))
+// logs is database has "Hello"
 
 console.log(database.get(settings.file, 0))
 // gets the element with position 1
