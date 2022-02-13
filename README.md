@@ -11,3 +11,14 @@ After that you must requiring the database framework. Add this to your main file
 const database = require('./database-template')
 ```
 Now you're ready to use this database framwork!
+
+## Introduction
+### Require the framework
+```
+const database = require('./database-template.json')
+```
+
+### Add an element to a database
+```
+database.add('./database.json', 'hello')
+```
