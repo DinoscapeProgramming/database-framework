@@ -3,7 +3,7 @@ const settings = {
   file: './database.json.example'
 }
 
-database.setup(settings.file.substring(1, settings.file.length))
+database.setup(settings.file)
 // creates a new file called "database.json.example"
 
 database.clear(settings.file)
