@@ -70,3 +70,5 @@ if (database.has(settings.file, "World") {
 }
 
 console.log(database.all(settings.file))
+
+database.clear(settings.file)
