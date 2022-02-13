@@ -25,7 +25,7 @@ function get(file, id) {
   return eval(fs.readFileSync(file, 'utf8'))[id]
 }
 
-function getDatabase(file) {
+function all(file) {
   return eval(fs.readFileSync(file, 'utf8'))
 }
 
