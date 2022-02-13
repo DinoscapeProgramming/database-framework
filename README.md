@@ -47,5 +47,5 @@ database.all('./database.json', i am fine') // replies with an array
 ```js
 const database = require('./database-template.js');
 const settings = {
-file: './database.json'
+  file: './database.json'
 }
