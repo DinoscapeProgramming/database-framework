@@ -40,5 +40,5 @@ database.has('./database.json', 'i am fine') // replies with true or false
 
 ### Get a whole database
 ```js
-database.getDatabase('./database.json', i am fine') // replies with an array
+database.all('./database.json', i am fine') // replies with an array
 ```
