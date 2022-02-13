@@ -25,6 +25,12 @@ function get(file, id) {
   return eval(fs.readFileSync(file, 'utf8'))[id]
 }
 
+function set(file, oldName, newName) {
+  let data = fs.readFileSync(file, 'utf8');
+  data[data.indexOf(oldName)] = newName
+  fs.writeFileSync(file, JSON.stringify(data), 'utf8')
+}
+
 function all(file) {
   return eval(fs.readFileSync(file, 'utf8'))
 }
@@ -33,4 +39,4 @@ function clear(file) {
   fs.writeFileSync(file, JSON.stringify([]), 'utf8')
 }
 
-module.exports = { add, remove, get, has, all, clear }
+module.exports = { add, remove, get, set, has, all, clear }
