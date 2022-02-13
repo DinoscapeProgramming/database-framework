@@ -1,10 +1,10 @@
 const fs = require('fs');
 
-function hasElement(file, name) {
+function has(file, name) {
   return eval(fs.readFileSync(file, 'utf8')).includes(name)
 }
 
-function addElement(file, name) {
+function add(file, name) {
   if (!name) throw new Error("NO ELEMENT GIVEN");
   if (hasElement(file, name)) throw new Error("ELEMENT ALREADY EXISTS");
   let data = fs.readFileSync(file, 'utf8');
@@ -13,7 +13,7 @@ function addElement(file, name) {
   fs.writeFileSync(file, JSON.stringify(data), 'utf8')
 }
 
-function removeElement(file, name) {
+function remove(file, name) {
   if (!name) throw new Error("NO ELEMENT GIVEN");
   let data = fs.readFileSync(file, 'utf8');
   data = eval(data)
@@ -21,7 +21,7 @@ function removeElement(file, name) {
   fs.writeFileSync(file, JSON.stringify(data), 'utf8')
 }
 
-function getElement(file, id) {
+function get(file, id) {
   return eval(fs.readFileSync(file, 'utf8'))[id]
 }
 
@@ -29,4 +29,4 @@ function getDatabase(file) {
   return eval(fs.readFileSync(file, 'utf8'))
 }
 
-module.exports = { addElement, removeElement, getElement, getDatabase, hasElement }
+module.exports = { add, remove, get, has, getDatabase }
