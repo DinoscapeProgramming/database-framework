@@ -6,6 +6,9 @@ const settings = {
 database.setup(settings.file.substring(1, settings.file.length))
 // creates a new file called "database.json.example"
 
+database.clear(settings.file)
+// clears the database
+
 database.add(settings.file, "Hello")
 // adds an element called "Hello"
 
