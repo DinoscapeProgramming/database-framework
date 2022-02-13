@@ -11,7 +11,7 @@ Now you're ready to use this database framwork!
 ## Introduction
 ### Require the framework
 ```js
-const database = require('./database-template.json')
+const database = require('./database-template.json');
 ```
 
 ### Add an element to a database
