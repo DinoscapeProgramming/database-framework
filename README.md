@@ -41,6 +41,7 @@ database.has('./database.json', 'i am fine') // replies with true or false
 ### Clear a database
 ```js
 database.clear('./database.json')
+```
 
 ### Get a whole database
 ```js
