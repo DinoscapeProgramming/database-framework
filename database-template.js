@@ -29,4 +29,4 @@ function all(file) {
   return eval(fs.readFileSync(file, 'utf8'))
 }
 
-module.exports = { add, remove, get, has, getDatabase }
+module.exports = { add, remove, get, has, all }
