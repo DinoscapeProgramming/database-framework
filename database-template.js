@@ -29,4 +29,8 @@ function all(file) {
   return eval(fs.readFileSync(file, 'utf8'))
 }
 
+function clear(file) {
+  fs.writeFileSync(file, JSON.stringify([]), 'utf8')
+}
+
 module.exports = { add, remove, get, has, all }
