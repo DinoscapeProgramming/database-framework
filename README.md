@@ -65,6 +65,8 @@ const settings = {
   file: './database.json'
 }
 
+database.clear(settings.file)
+
 database.add(settings.file, "Hello")
 
 database.add(settings.file, "World")
@@ -82,5 +84,3 @@ if (database.has(settings.file, "World") {
 database.set(settings.file, "World", "You there")
 
 console.log(database.all(settings.file))
-
-database.clear(settings.file)
