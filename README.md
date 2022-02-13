@@ -42,3 +42,10 @@ database.has('./database.json', 'i am fine') // replies with true or false
 ```js
 database.all('./database.json', i am fine') // replies with an array
 ```
+
+## Example
+```js
+const database = require('./database-template.js');
+const settings = {
+file: './database.json'
+}
