@@ -79,6 +79,8 @@ if (database.has(settings.file, "World") {
   console.log("How are you all on the world?")
 }
 
+database.set(settings.file, "World", "You there")
+
 console.log(database.all(settings.file))
 
 database.clear(settings.file)
