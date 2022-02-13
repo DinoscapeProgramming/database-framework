@@ -6,6 +6,10 @@ First copy the file __database-template.js__ to your program. Then create a JSON
 ```
 []
 ```
+or add this to your code
+```js
+database.setup(database.json)
+```
 After that you must requiring the database framework. Add this to your main file:
 ```js
 const database = require('./database-template')
@@ -16,11 +20,6 @@ Now you're ready to use this database framwork!
 ### Require the framework
 ```js
 const database = require('./database-template.json')
-```
-
-### Create a new database (optional)
-```js
-database.setup('database.json')
 ```
 
 ### Add an element to a database
