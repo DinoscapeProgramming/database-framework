@@ -4,10 +4,10 @@ const settings = {
 }
 
 database.add(settings.file, "Hello")
-// adds a element called "Hello"
+// adds an element called "Hello"
 
 database.remove(settings.file, "World")
-// removes a element called "World"
+// removes an element called "World"
 
 console.log(database.get(settings.file, 0))
 // gets the first element
