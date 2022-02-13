@@ -1,5 +1,5 @@
 # Database Template
-A database template programmed with fs
+A database template programmed with fs and using arrays
 
 ## Get started
 First copy the file __database-template.js__ to your program. Then create a JSON file with ``` [] ``` as content or add this to your code:
