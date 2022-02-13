@@ -10,11 +10,6 @@ After that create a JSON file with ``` [] ``` as content or add this to your cod
 ```js
 database.setup('./database.json')
 ```
-
-After that you must requiring the database framework. Add this to your main file:
-```js
-const database = require('./database-template')
-```
 Now you're ready to use this database framwork!
 
 ## Introduction
