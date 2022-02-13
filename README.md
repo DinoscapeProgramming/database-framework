@@ -2,11 +2,7 @@
 A database template programmed with fs
 
 ## Get started
-First copy the file __database-template.js__ to your program. Then you need to requiring the database framework. Add this to your main file:
-```js
-const database = require('./database-template');
-```
-After that create a JSON file with ``` [] ``` as content or add this to your code:
+First copy the file __database-template.js__ to your program. Then create a JSON file with ``` [] ``` as content or add this to your code:
 ```js
 database.setup('./database.json')
 ```
