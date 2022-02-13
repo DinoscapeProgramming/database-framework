@@ -1,10 +1,12 @@
 const fs = require('fs');
 
 function setup(name) {
-  if (!name.endsWith(".json")) throw new Error("FILE MUST HAVE JSON AS FORMAT");
-  fs.appendFileSync(name, JSON.stringify([]), function (err) {
+  if (!fs.existsSync(name)) {
+    if (!name.endsWith(".json")) throw new Error("FILE MUST HAVE JSON AS FORMAT");
+    fs.appendFileSync(name, JSON.stringify([]), function (err) {
     throw err;
-  })
+    })
+  }
 }
 
 function has(file, name) {
