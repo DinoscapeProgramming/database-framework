@@ -15,7 +15,7 @@ function has(file, name) {
 
 function add(file, name) {
   if (!name) throw new Error("NO ELEMENT GIVEN");
-  if (hasElement(file, name)) throw new Error("ELEMENT ALREADY EXISTS");
+  if (has(file, name)) throw new Error("ELEMENT ALREADY EXISTS");
   let data = fs.readFileSync(file, 'utf8');
   data = eval(data)
   data.push(name)
