@@ -10,7 +10,7 @@ database.remove(settings.file, "World")
 // removes an element called "World"
 
 console.log(database.get(settings.file, 0))
-// gets the first element
+// gets the element with position 1
 
 console.log(database.getDatabase(settings.file))
 // gets the whole database
