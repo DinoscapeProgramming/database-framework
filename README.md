@@ -10,6 +10,7 @@ or add this to your code
 ```js
 database.setup(database.json)
 ```
+
 After that you must requiring the database framework. Add this to your main file:
 ```js
 const database = require('./database-template')
