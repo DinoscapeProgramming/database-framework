@@ -1,6 +1,7 @@
 const fs = require('fs');
 
 function addElement(file, name) {
+  if (!name) throw new Error("NO ELEMENT GIVEN");
   let data = fs.readFileSync(file, 'utf8');
   data = eval(data)
   data.push(name)
@@ -8,6 +9,7 @@ function addElement(file, name) {
 }
 
 function removeElement(file, name) {
+  if (!name) throw new Error("NO ELEMENT GIVEN");
   let data = fs.readFileSync(file, 'utf8');
   data = eval(data)
   data = data.filter(item => item != name)
