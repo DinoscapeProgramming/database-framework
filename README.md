@@ -34,11 +34,11 @@ database.get('./database.json', 'how are you')
 ```
 
 ### Has database an element
-```
+```js
 database.has('./database.json', 'i am fine') // replies with true or false
 ```
 
 ### Get a whole database
-```
+```js
 database.getDatabase('./database.json', i am fine') // replies with an array
 ```
