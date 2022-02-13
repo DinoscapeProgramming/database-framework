@@ -38,6 +38,10 @@ database.get('./database.json', 'how are you')
 database.has('./database.json', 'i am fine') // replies with true or false
 ```
 
+### Clear a database
+```js
+database.clear('./database.json')
+
 ### Get a whole database
 ```js
 database.all('./database.json', i am fine') // replies with an array
