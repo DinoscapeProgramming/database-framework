@@ -18,6 +18,11 @@ Now you're ready to use this database framwork!
 const database = require('./database-template.json')
 ```
 
+### Create a new database (optional)
+```js
+database.setup('database.json')
+```
+
 ### Add an element to a database
 ```js
 database.add('./database.json', 'hello')
