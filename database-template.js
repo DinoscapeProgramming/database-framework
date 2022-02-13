@@ -27,6 +27,7 @@ function get(file, id) {
 
 function set(file, oldName, newName) {
   let data = fs.readFileSync(file, 'utf8');
+  data = eval(data)
   data[data.indexOf(oldName)] = newName
   fs.writeFileSync(file, JSON.stringify(data), 'utf8')
 }
