@@ -50,7 +50,6 @@ const settings = {
   file: './database.json'
 }
 
-
 database.add(settings.file, "Hello")
 
 database.add(settings.file, "World")
