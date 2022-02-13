@@ -1,6 +1,6 @@
 const database = require('./database-template');
 const settings = {
-  file: './database.json'
+  file: './database.json.example'
 }
 
 database.addElement(settings.file, "Hello")
