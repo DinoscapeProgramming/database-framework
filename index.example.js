@@ -26,3 +26,6 @@ console.log(database.get(settings.file, 0))
 
 console.log(database.all(settings.file))
 // gets the whole database
+
+database.unsetup(settings.file)
+// deletes the database
