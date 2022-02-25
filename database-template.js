@@ -49,4 +49,8 @@ function clear(file) {
   fs.writeFileSync(file, JSON.stringify([]), 'utf8')
 }
 
-module.exports = { setup, add, remove, get, set, has, all, clear }
+function unsetup(file) {
+  fs.unlinkSync(file)
+}
+
+module.exports = { setup, add, remove, get, set, has, all, clear, unsetup }
