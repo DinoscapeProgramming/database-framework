@@ -54,6 +54,11 @@ database.clear('./database.json')
 database.all('./database.json', i am fine') // replies with an array
 ```
 
+### Unsetup a database
+```js
+database.unsetup('./database.json')
+```
+
 ## Example
 ```js
 const database = require('./database-template.js');
@@ -82,4 +87,6 @@ if (database.has(settings.file, "World") {
 database.set(settings.file, "World", "You there")
 
 console.log(database.all(settings.file))
+
+database.unsetup(settings.file)
 ```
