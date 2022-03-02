@@ -26,7 +26,7 @@ function remove(file, name) {
   if (!name) throw new Error("NO ELEMENT GIVEN");
   let data = fs.readFileSync(file, 'utf8');
   data = eval(data)
-  data = data.filter(item => item != name)
+  data = data.filter(item => item !== name)
   fs.writeFileSync(file, JSON.stringify(data), 'utf8')
 }
 
